@@ -10,6 +10,9 @@
 # Ejercicios con comprensión de listas
 
 
+from traceback import print_tb
+
+
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
@@ -30,6 +33,11 @@ if __name__ == '__main__':
 
     # personal_1_10 = [.....]
 
+    personasl_1_10 = [x for x in accesos if x > 1 and x <= 10]
+    numero_pasaron = len(personasl_1_10)
+    print('el numero de personas que pasaron el filtro es',numero_pasaron, 'La lista es: ',personasl_1_10)
+
+
     # 2)
     # Generar una lista por comprensión de la listas "accesos"
     # cuyo ID de personal esté dentro de los ID válidos para ingresar
@@ -42,4 +50,8 @@ if __name__ == '__main__':
 
     # personal_valido = [.....]
 
+    personal_valido = [x for x in id_validos if x in accesos]
+
+    print(personal_valido)
+    
     print("terminamos")

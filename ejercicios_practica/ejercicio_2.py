@@ -20,9 +20,14 @@ if __name__ == '__main__':
 
     # len_string = lambda......
 
+    len_string = lambda x: len(x)
+
+    res_1 = len_string('peru')
     # 2)
     # Lista de string
     palabras = ['Inove', 'casa', 'programacion']
+
+    almacen = list(map(lambda x: len(x),palabras))
 
     # Utilice la función map para mapear una lambda expression
     # que retorne el tamaño (len) de cada texto em cata iteración
